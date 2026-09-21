@@ -1,1 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - Ramón Benjamin Recinos Yanes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f3f4f6;
+            display: flex;
+            justify-content: center;
+            padding: 2rem 0;
+        }
+        .cv-container {
+            width: 800px;
+            background-color: white;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            display: flex;
+            min-height: 1131px; /* A4 aspect ratio roughly */
+        }
+        .sidebar {
+            width: 35%;
+            background-color: #0fb3c6; /* Teal color from example */
+            color: white;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .photo-container {
+            background-color: #333; /* Dark gray background for photo area */
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #0fb3c6;
+            background-color: white; /* In case photo has transparency */
+        }
+        .sidebar-content {
+            padding: 2rem;
+        }
+        .main-content {
+            width: 65%;
+            padding: 3rem;
+        }
+        h1 {
+            color: #0fb3c6;
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+        }
+        h2.section-title-main {
+            color: #333;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-bottom: 2px solid #0fb3c6;
+            padding-bottom: 0.25rem;
+            margin-bottom: 1rem;
+            margin-top: 1.5rem;
+        }
+        h2.section-title-sidebar {
+            color: white;
+            font-size: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-bottom: 2px solid white;
+            padding-bottom: 0.25rem;
+            margin-bottom: 1rem;
+            margin-top: 1.5rem;
+        }
+        .contact-info {
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.75rem;
+            word-break: break-all;
+        }
+        .contact-item i {
+            margin-right: 0.75rem;
+            font-size: 1rem;
+            width: 16px;
+            text-align: center;
+        }
+        .job-item {
+            margin-bottom: 1.5rem;
+        }
+        .job-dates {
+            font-size: 0.85rem;
+            color: #666;
+            margin-bottom: 0.25rem;
+        }
+        .job-title {
+            font-weight: 700;
+            color: #333;
+        }
+        .job-company {
+            font-weight: 600;
+            color: #555;
+            margin-bottom: 0.5rem;
+        }
+        .job-description {
+            font-size: 0.9rem;
+            color: #444;
+            line-height: 1.4;
+        }
+        .job-description ul {
+            list-style-type: disc;
+            padding-left: 1.25rem;
+            margin-top: 0.25rem;
+        }
+        .education-item {
+            margin-bottom: 1rem;
+        }
+        .education-dates {
+            font-size: 0.85rem;
+            color: #666;
+            margin-bottom: 0.25rem;
+        }
+        .education-degree {
+            font-weight: 700;
+            color: #333;
+        }
+        .education-school {
+            font-size: 0.9rem;
+            color: #555;
+        }
+        .skills-list {
+            list-style-type: none;
+            padding: 0;
+            font-size: 0.9rem;
+        }
+        .skills-list li {
+            margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 1rem;
+        }
+        .skills-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: white;
+        }
+        .text-sm-sidebar {
+            font-size: 0.85rem;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
 
+<div class="cv-container">
+    <!-- Barra Lateral (Sidebar) -->
+    <div class="sidebar">
+        <div class="photo-container">
+            <!-- Marcador de posición para la foto, idealmente recortada a proporción 1:1 -->
+            <img src="Foto Ramon recinos.png" alt="Foto de Ramón Recinos" class="photo">
+        </div>
+        <div class="sidebar-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>+(503) 7877-7260</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>ramon_benjamin@hotmail.com</span>
+                </div>
+                 <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Res. Villas de Metrópolis pasaje la Ceiba Casa 13 Mejicanos</span>
+                </div>
+            </div>
+
+            <h2 class="section-title-sidebar">Resumen Profesional</h2>
+            <p class="text-sm-sidebar text-justify">
+                Especialista en soluciones tecnológicas para la educación y docente certificado en Educación Superior con amplia experiencia en Robótica Educativa, Sistemas STEAM y tecnologías emergentes. Reconocido internacionalmente como Microsoft Innovative Educator Expert y destacado por la implementación de proyectos innovadores en el aula.
+            </p>
+
+            <h2 class="section-title-sidebar">Aptitudes & Conocimientos</h2>
+            <ul class="skills-list">
+                <li>Robótica Educativa (Arduino, LEGO, Fischertechnik)</li>
+                <li>Implementación Sistema STEAM</li>
+                <li>Desarrollo Web (HTML5, .NET)</li>
+                <li>Administración de Redes (Windows, Novell)</li>
+                <li>Plataformas Educativas (Moodle, Google Workspace, Office 365)</li>
+                <li>Inteligencia Artificial y Metaverso en Educación</li>
+                <li>Formación Docente y Liderazgo de Proyectos</li>
+            </ul>
+
+            <h2 class="section-title-sidebar">Datos Personales</h2>
+            <ul class="skills-list text-sm-sidebar">
+                <li>DUI: 02064024-4</li>
+                <li>NIT: 0614-230876-132-1</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Contenido Principal (Main Content) -->
+    <div class="main-content">
+        <h1>Ramón Benjamin<br>Recinos Yanes</h1>
+
+        <h2 class="section-title-main">Historial Laboral</h2>
+
+        <div class="job-item">
+            <div class="job-dates">2023 - a la fecha</div>
+            <div class="job-title">Gerente y Especialista en Soluciones Tecnológicas para la Educación</div>
+            <div class="job-company">STB GROUP SA DE CV</div>
+        </div>
+
+        <div class="job-item">
+            <div class="job-dates">2020 - 2023</div>
+            <div class="job-title">Asesor de Robótica Educativa</div>
+            <div class="job-company">STB Group SA de CV</div>
+        </div>
+
+        <div class="job-item">
+            <div class="job-dates">2020 - 2022</div>
+            <div class="job-title">Asesor de tecnología y sistema STEAM con la educación</div>
+            <div class="job-company">Colegio García Flamenco</div>
+        </div>
+
+        <div class="job-item">
+            <div class="job-dates">2018 - 2025</div>
+            <div class="job-title">Docente de Robótica Educativa (Metodología Arduino)</div>
+            <div class="job-company">Universidad Francisco Gavidia - Programa Jóvenes Talentos de Tecnología</div>
+        </div>
+
+        <div class="job-item">
+            <div class="job-dates">2008 - 2023</div>
+            <div class="job-title">Coordinador de Aula Informática</div>
+            <div class="job-company">Ministerio de Educación</div>
+        </div>
+
+        <div class="job-item">
+            <div class="job-dates">2005 - 2008</div>
+            <div class="job-title">Profesor de informática y encargado de informática</div>
+            <div class="job-company">Liceo Ladislao Leiva</div>
+        </div>
+        
+        <div class="job-item">
+            <div class="job-title">Experiencia Previa Destacada (1996 - 2006)</div>
+            <div class="job-description">
+                <ul>
+                    <li>Instructor de Diseño Web y Operación de Red en instituciones como Computer Data Center, Diario de Hoy, Infocentros S.A. y New Horizons.</li>
+                    <li>Encargado de Sistemas en Zermat El Salvador y Honduras.</li>
+                    <li>Profesor de Redes, Computación y Mantenimiento de Hardware/Software (ITCA, Corporación de Contadores, RR Computadoras).</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 class="section-title-main">Formación Académica</h2>
+
+        <div class="education-item">
+            <div class="education-dates">1999 - 2004</div>
+            <div class="education-degree">Ingeniería en Sistemas</div>
+            <div class="education-school">Universidad Tecnológica de El Salvador</div>
+        </div>
+
+        <div class="education-item">
+            <div class="education-dates">1998 - 1999</div>
+            <div class="education-degree">Técnico en Ingeniería Electrónica (Opción Mantenimiento de Computadoras)</div>
+            <div class="education-school">Instituto Tecnológico Centroamericano (ITCA)</div>
+        </div>
+
+        <div class="education-item">
+            <div class="education-dates">1996 - 1998</div>
+            <div class="education-degree">Estudios en Ingeniería Eléctrica</div>
+            <div class="education-school">Universidad de El Salvador</div>
+        </div>
+
+        <h2 class="section-title-main">Reconocimientos Destacados</h2>
+        <div class="job-description">
+             <ul>
+                <li>Microsoft Innovative Educator Expert (Múltiples años consecutivos: 2014-2021, 2024-2025).</li>
+                <li>Elegido entre los 70 mejores de Global Teacher Award 2019 y nominado en 2020.</li>
+                <li>Primer Lugar en Centroamérica, Latinoamérica y el Caribe (Teacher Choice Award - Lego Education, 2015).</li>
+                <li>Múltiples Primeros Lugares en Campamentos y Retos Nacionales de Robótica Educativa (MINED, 2014-2018).</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
